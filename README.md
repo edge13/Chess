@@ -1,8 +1,10 @@
 # Chess
 A 3D chess game in C++, for an AI project at KU.
 
-Team Girella's Chess
-By Joel Angelone, Justin Hendricks, Justin Donnel, and Adam Riha
+- Minimax search with alpha-beta pruning
+- OpenGL using GLUT, FMOD for sound
+- Configurable "bots" for AI opponents
+- Disco mode :)
 
 ### Compiling the project
 
