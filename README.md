@@ -25,9 +25,9 @@ g++ -g -o chess main.o BMPLoader.o bot.o chess.o geometry.o mesh.o sound.o  -lgl
 
 ### Controls
 - Use the arrow keys to move the cursor (the blue target)
-- Once the cursor is positioned at the piece you want to move, press <ENTER> to select the piece
-- Now move the cursor to the destination you want to move the piece to and press <ENTER>
-- If at any time you want to choose a different piece, press <ESC> and it will cancel your selection
+- Once the cursor is positioned at the piece you want to move, press ENTER to select the piece
+- Now move the cursor to the destination you want to move the piece to and press ENTER
+- If at any time you want to choose a different piece, press ESC to cancel your selection
 - To move the camera, hold down the left mouse button and drag the mouse
 - Right clicking will access a menu with several options:
   - New game - starts a new game
