@@ -15,8 +15,8 @@ This will unpack the project.
 Example:
 
 >bash-3.1$ tar xvf Chess.tar.gz
-Chess/Audio/Stalemate.wav
-Chess/Audio/Move.wav
+>Chess/Audio/Stalemate.wav
+>Chess/Audio/Move.wav
 Chess/Audio/Cursor.wav
 Chess/Audio/IllegalMove.wav
 Chess/Audio/Capture.wav
