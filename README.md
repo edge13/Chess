@@ -13,7 +13,8 @@ tar xvf Chess.tar.gz
 This will unpack the project.
 
 Example:
-bash-3.1$ tar xvf Chess.tar.gz
+
+>bash-3.1$ tar xvf Chess.tar.gz
 Chess/Audio/Stalemate.wav
 Chess/Audio/Move.wav
 Chess/Audio/Cursor.wav
