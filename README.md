@@ -1,8 +1,8 @@
 # Chess
 A 3D chess game in C++, for an AI project at KU.
 
-## Team Girella's Chess
-## By Joel Angelone, Justin Hendricks, Justin Donnel, and Adam Riha
+#### Team Girella's Chess
+#### By Joel Angelone, Justin Hendricks, Justin Donnel, and Adam Riha
 
 Instructions for unpacking the project:
 	
@@ -12,7 +12,7 @@ tar xvf Chess.tar.gz
 
 This will unpack the project.
 
-###Example:
+#### Example:
 bash-3.1$ tar xvf Chess.tar.gz
 Chess/Audio/Stalemate.wav
 Chess/Audio/Move.wav
