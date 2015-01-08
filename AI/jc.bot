@@ -1,0 +1,116 @@
+
+# We set the value below to denote that the bot wants less pieces on the 
+# board
+BEGIN_NUM_PIECES_SWITCH
+1
+
+BEGIN_THRESHOLD
+31 5
+30 5
+29 5
+28 5
+27 5
+26 5
+25 5
+24 5
+23 5
+22 5
+21 -5
+20 -5
+19 -5
+18 -5
+17 -5
+16 -5
+15 -5
+14 6
+13 6
+12 6
+11 5
+10 6
+9  7
+8  7
+7  7
+6  8
+5  8
+4  9
+3  10
+2  10
+1  11
+
+BEGIN_RANDOM
+# We just want a little randomness
+1
+
+# The king is at the most advantage at its start position or
+# in the castle king side
+BEGIN_KING
+100
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0  0
+0 0 0 0 10 0 10 0
+
+# The queen has a higher advantage where she can attack her
+# enemies more openly
+BEGIN_QUEEN
+11
+0 0 0 0 0 0 0 0
+0 10 10 10 15 10 10 0
+0 10 15 10 15 15 10 0
+0 10 20 10 15 20 10 0
+0 10 15 10 15 15 10 0
+0 10 10 10 15 10 10 0
+0 10 15 10 15 15 10 0
+0 0 0 0 0 0 0 0
+
+# The rook slides along the sides
+BEGIN_ROOK
+6
+4 3 3 3 3 3 3 4
+3 0 0 0 0 0 0 3
+3 0 0 0 0 0 0 3
+3 0 0 2 2 0 0 3
+3 0 0 2 2 0 0 3
+3 0 0 0 0 0 0 3
+3 0 0 0 0 0 0 3
+0 0 0 3 3 0 0 0
+
+# I never liked the bishop...
+BEGIN_BISHOP
+1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 5 0 0 0 0 5 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+# Knight is awesome
+BEGIN_KNIGHT
+8
+0 0 0 0 0 0 0 0
+0 0 5 0 0 5 0 0
+0 0 0 0 0 0 0 0
+0 2 0 2 2 0 2 0
+0 0 0 0 0 0 0 0
+0 0 2 0 0 2 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+# I always liked making my pawns queens
+BEGIN_PAWN
+2
+20 20 20 20 20 20 20 20
+18 18 18 18 18 18 18 18
+6 6 6 6 6 6 6 6
+4 4 4 4 4 4 4 4
+2 2 2 2 2 2 2 2
+1 1 1 1 1 1 1 1
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0

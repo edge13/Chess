@@ -1,0 +1,125 @@
+# This is an example AI file
+# First we read in the bot's global values
+BEGIN_NUM_PIECES_SWITCH
+# We denote a 1 to if the bot wants more pieces on the board
+# or a 0 if the bot wants less pieces on the board
+1
+
+BEGIN_THRESHOLD
+# If a one was put above then below we could put thresholds
+# Number of Pieces Left : Ply to look ahead
+31 5
+30 5
+29 5
+28 5
+27 5
+26 5
+25 5
+24 5
+23 5
+22 5
+21 5
+20 5
+19 5
+18 5
+17 5
+16 5
+15 5
+14 5
+13 5
+12 5
+11 5
+10 5
+9  5
+8  5
+7  5
+6  5
+5  5
+4  5
+3  5
+2  5
+1  5
+
+BEGIN_RANDOM
+# If we want the move to be entirely random we specify a 1
+# otherwise we specify a 0
+5
+
+BEGIN_BOARD_EMPHASIS
+# We can also specify the board emphasis
+# MORE HERE
+# We can change how the piece values are calculated
+# First we specify the weight of the piece
+# then an 8 by 8 grid of values if we want a piece# to be stronger in a certain location
+BEGIN_KING
+1000
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+#LOOKING ABOVE ^
+
+BEGIN_QUEEN
+90
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+BEGIN_BISHOP
+30
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+BEGIN_KNIGHT
+30
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+BEGIN_ROOK
+50
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+BEGIN_PAWN
+10
+
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
