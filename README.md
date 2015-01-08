@@ -22,7 +22,7 @@ g++ -g -o chess main.o BMPLoader.o bot.o chess.o geometry.o mesh.o sound.o  -lgl
 type ./chess to run the program.
 
 Controls:
-- Use the arrow keys (UP, DOWN, LEFT, RIGHT) on the keyboard to move the cursor (The blue target)
+- Use the arrow keys to move the cursor (the blue target)
 - Once the cursor is positioned at the piece you want to move, press <ENTER> to select the piece
 - Now move the cursor to the destination you want to move the piece to and press <ENTER>
 - If at any time you want to choose a different piece, press <ESC> and it will cancel your selection
