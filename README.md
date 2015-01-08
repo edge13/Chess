@@ -13,10 +13,10 @@ tar xvf Chess.tar.gz
 This will unpack the project.
 
 Example:
-
->bash-3.1$ tar xvf Chess.tar.gz
->Chess/Audio/Stalemate.wav
->Chess/Audio/Move.wav
+```
+bash-3.1$ tar xvf Chess.tar.gz
+Chess/Audio/Stalemate.wav
+Chess/Audio/Move.wav
 Chess/Audio/Cursor.wav
 Chess/Audio/IllegalMove.wav
 Chess/Audio/Capture.wav
@@ -70,7 +70,7 @@ Chess/bot.h
 Chess/bot.cpp
 Chess/BMPLoader.h
 Chess/BMPLoader.cpp
-
+```
 Instructions for compiling the project:
 
 Now navigate to the Chess directory and type "make"
