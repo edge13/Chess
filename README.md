@@ -4,7 +4,7 @@ A 3D chess game in C++, for an AI project at KU.
 Team Girella's Chess
 By Joel Angelone, Justin Hendricks, Justin Donnel, and Adam Riha
 
-# Compiling the project
+### Compiling the project
 
 Navigate to the Chess directory and invoke the makefile
 ```
