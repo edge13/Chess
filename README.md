@@ -23,8 +23,6 @@ g++ -g -c  sound.cpp
 g++ -g -o chess main.o BMPLoader.o bot.o chess.o geometry.o mesh.o sound.o  -lglut -lGLU -lGL  -lXmu -lXext -lX11 -lXi -lm  lib/libfmodex.so -pthread
 ```
 
-type ./chess to run the program.
-
 ### Controls
 - Use the arrow keys to move the cursor (the blue target)
 - Once the cursor is positioned at the piece you want to move, press <ENTER> to select the piece
