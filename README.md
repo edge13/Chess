@@ -34,7 +34,4 @@ Controls:
   - Disco Mode - enables the special disco mode feature
   - Exit - exits the program
 
-When bots are selected for either color, they will play automatically when it is their turn.
-Bot settings will be saved even when the new game option is chosen.
-Note that, depending on the complexity of the bot, it may take several seconds to move, during
-which time interactivity with the program will be limited.
+Bots will play automatically, and bot settings will persist between games.
