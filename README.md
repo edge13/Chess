@@ -6,7 +6,7 @@ A 3D chess game in C++, for an AI project at KU.
 - Configurable "bots" for AI opponents
 - Disco mode :)
 
-![Alt text](/Screenshot?raw=true "Screenshot")
+![Alt text](/Screenshot.png?raw=true "Screenshot")
 
 ### Compiling the project
 
