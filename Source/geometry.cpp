@@ -13,7 +13,7 @@
 //
 //===========================================================================
 
-#include <GL/glut.h>
+#include <GLUT/glut.h>
 #include <stdlib.h>
 #include "BMPLoader.h"
 #include "geometry.h"
@@ -87,7 +87,7 @@ void Geometry::Init()
 {
 
 	// Load the light tile bitmap
-	if (loadOpenGL2DTextureBMP("Graphics/tile_light.bmp", &tile_light, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if (loadOpenGL2DTextureBMP("Textures/tile_light.bmp", &tile_light, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading texture: tile_light.bmp" << endl;
 	}
@@ -100,7 +100,7 @@ void Geometry::Init()
 	glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
 
 	// Load the dark tile bitmap
-	if (loadOpenGL2DTextureBMP("Graphics/tile_dark.bmp", &tile_dark, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if (loadOpenGL2DTextureBMP("Textures/tile_dark.bmp", &tile_dark, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading texture: tile_dark.bmp" << endl;
 	}
@@ -113,7 +113,7 @@ void Geometry::Init()
 	glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
 
 	// Load the background bitmap
-	if (loadOpenGL2DTextureBMP("Graphics/background.bmp", &background, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if (loadOpenGL2DTextureBMP("Textures/background.bmp", &background, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading texture: background.bmp" << endl;
 	}
@@ -126,28 +126,28 @@ void Geometry::Init()
 	glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
 
 	// Load the pawn mesh
-	pawn = new mesh("Graphics/pawn.obj");
+	pawn = new mesh("Models/pawn.obj");
 
 	// Load the rook mesh
-	rook = new mesh("Graphics/rook.obj");
+	rook = new mesh("Models/rook.obj");
 
 	// Load the knight mesh
-	knight = new mesh("Graphics/knight.obj");
+	knight = new mesh("Models/knight.obj");
 
 	// Load the bishop mesh
-	bishop = new mesh("Graphics/bishop.obj");
+	bishop = new mesh("Models/bishop.obj");
 
 	// Load the queen mesh
-	queen = new mesh("Graphics/queen.obj");
+	queen = new mesh("Models/queen.obj");
 
 	// Load the king mesh
-	king = new mesh("Graphics/king.obj");
+	king = new mesh("Models/king.obj");
 
 	// Load the base mesh
-	base = new mesh("Graphics/boardVer3Tex.obj");
+	base = new mesh("Models/boardVer3Tex.obj");
 
 	// Load the wood bitmap (used for base)
-	if (loadOpenGL2DTextureBMP("Graphics/wood.bmp", &baseTex, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if (loadOpenGL2DTextureBMP("Textures/wood.bmp", &baseTex, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading texture: wood.bmp" << endl;
 	}
@@ -160,13 +160,13 @@ void Geometry::Init()
 	glTexParameterf(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 
 	// Load white's promotion menu bitmap
-	if(loadOpenGL2DBMP("Graphics/promotion_white.bmp", &promotion_white, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if(loadOpenGL2DBMP("Textures/promotion_white.bmp", &promotion_white, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading image file: promotion_white.bmp" << endl;
 	}
 
 	// Load black's promotion menu bitmap
-	if(loadOpenGL2DBMP("Graphics/promotion_black.bmp", &promotion_black, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
+	if(loadOpenGL2DBMP("Textures/promotion_black.bmp", &promotion_black, GL_RGB) != LOAD_TEXTUREBMP_SUCCESS)
 	{
 		cout << "Error loading image file: promotion_black.bmp" << endl;
 	}

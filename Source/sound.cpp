@@ -1,9 +1,3 @@
-// Below is a fix for windows
-#if defined(WIN32)
-#define GLUT_DISABLE_ATEXIT_HACK    //Used to stop a error when compiling on Windows machines
-#include <windows.h>
-#else
-#endif
 
 //===========================================================================
 //  File name ......: Sound.cpp
@@ -127,7 +121,7 @@ void Sounds::playSound(char* filename, bool loop)
 
 	//create the sound
     	//result = FMOD_System_CreateSound(system2, filename, FMOD_HARDWARE, 0, &sound1);
-	result = FMOD_System_CreateSound(system2, filename, FMOD_SOFTWARE, 0, &sound1);
+	result = FMOD_System_CreateSound(system2, filename, 0, 0, &sound1);
     	ERRCHECK(result);
 
 	//if loop is true, set loop mode, else set loop to off
@@ -138,7 +132,7 @@ void Sounds::playSound(char* filename, bool loop)
     	ERRCHECK(result);
 
 	//play the sound using channel
-	result = FMOD_System_PlaySound(system2, FMOD_CHANNEL_FREE, sound1, 0, &channel);
+	result = FMOD_System_PlaySound(system2, sound1, 0, 0, &channel);
      ERRCHECK(result);
 
      FMOD_System_Update(system2);
@@ -164,7 +158,7 @@ void Sounds::playMusic(char* filename, bool loop)
 {
      //create the sound
 //    	result = FMOD_System_CreateSound(system2, filename, FMOD_HARDWARE, 0, &music1);
-	result = FMOD_System_CreateSound(system2, filename, FMOD_SOFTWARE, 0, &music1);
+	result = FMOD_System_CreateSound(system2, filename, 0, 0, &music1);
     	ERRCHECK(result);
 
 	//if loop is true, set loop mode, else set loop to off
@@ -176,7 +170,7 @@ void Sounds::playMusic(char* filename, bool loop)
     	ERRCHECK(result);
 
 	//play the sound using channel
-	result = FMOD_System_PlaySound(system2, FMOD_CHANNEL_FREE, music1, 0, &channel2);
+	result = FMOD_System_PlaySound(system2, music1, 0, 0, &channel2);
      ERRCHECK(result);
 
      FMOD_System_Update(system2);

@@ -1,10 +1,3 @@
-// Below is a fix for windows
-#if defined(WIN32)
-#define GLUT_DISABLE_ATEXIT_HACK    //Used to stop a error when compiling on Windows machines
-#include <windows.h>
-#else
-#endif
-
 //////////////////////////////////////////////////////////////////////////////
 // by Jacob Marner. Feb 2002.
 //
@@ -20,7 +13,7 @@
 // include line and include the standard OpenGL headers instead,
 // <GL/gl.h> and <GL/glu.h>. If you use Windows but not GLUT 
 // remember to include <windows.h> also.
-#include <GL/glut.h>
+#include <GLUT/glut.h>
 
 // The following is the function return type. Use this to
 // get information about how the loading operation went.

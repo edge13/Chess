@@ -1,13 +1,6 @@
 // This code written by Jung-Hong Chuang
 // http://cggmwww.csie.nctu.edu.tw/courses/cgu/2002/
 
-// Below is a fix for windows
-#if defined(WIN32)
-#define GLUT_DISABLE_ATEXIT_HACK    //Used to stop a error when compiling on Windows machines
-#include <windows.h>
-#else
-#endif
-
 // mesh.h: interface for the mesh class.
 //
 //////////////////////////////////////////////////////////////////////
@@ -24,7 +17,7 @@
 #include <map>
 #include <vector>
 #include <string>
-#include <GL/glut.h>
+#include <GLUT/glut.h>
 
 using namespace std;
 

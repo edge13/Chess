@@ -15,15 +15,9 @@
 //
 //===========================================================================
 
-// Below is a fix for windows
-#if defined(WIN32)
-#define GLUT_DISABLE_ATEXIT_HACK    //Used to stop a error when compiling on Windows machines
-#include <windows.h>
-#else
-#endif
-
-#include <GL/glut.h>
+#include <GLUT/glut.h>
 #include <iostream>
+#include <chrono>
 #include "sound.h"
 #include "geometry.h"
 #include "chess.h"
@@ -979,7 +973,7 @@ void MenuCB(int value)
 			// If testing
 			//bot_black.printBotValues();
 			BlackHuman = false;
-			glutTimerFunc(1000, TimerCB, 2);
+			//glutTimerFunc(1000, TimerCB, 2);
 		break;
 
 		// "Black --> riha.bot"
@@ -1199,7 +1193,7 @@ int main(int argc, char* argv[])
 	chess.Init();
 
 	// Seed the random number generator
-	srand(timeGetTime());
+	srand(time(NULL));
 
 	Message("White plays first");
 	sound.playMusic("Audio/Background.mp3", true);

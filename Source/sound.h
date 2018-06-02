@@ -22,13 +22,10 @@
 #ifndef SOUND_H
 #define SOUND_H
 
-#include <fmod.h>
-#include <fmod_errors.h>
-#include <windows.h>
+#include "fmod/fmod.h"
+#include "fmod/fmod_errors.h"
 #include <stdio.h>
 #include <stdlib.h>
-//#include <conio.h>
-//using namespace std;
 
 #pragma comment (lib, "fmodex_vc.lib")
 
